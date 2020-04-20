@@ -1,0 +1,30 @@
+<div class="panel panel-default" ng-init="getPlayer()">
+	<div class="panel-heading">
+	  <p class="panel-title"><span style="color:#5bc0de;" 
+class="glyphicon glyphicon-list"> </span> Players List</p>
+	</div>
+	<div class="panel-body">
+		<table class="table table-striped">
+			<thead>
+			<tr>
+			  <th>Name</th>
+			  <th>Joining Date</th>
+			  <th>Type</th>
+			  <th>Actions</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr ng-repeat="player in players">
+			  <td>{{ player.name }}</td>
+			  <td>{{ player.joiningdate }}</td>
+			  <td>{{ player.type }}</td>
+			  <td> 
+			    <a href="#/players/{{player._id}}/show" class="btn btn-info"> Show  </a>
+			    <a href="#/players/{{player._id}}/edit" class="btn btn-success"><span class="glyphicon glyphicon-edit"> </span> Edit  </a>
+			  	<a ng-click="deletePlayer(player._id)" class="btn btn-danger"><span class="glyphicon glyphicon-trash"> </span> Delete </a>
+			  </td>
+			</tr>
+			</tbody>
+		</table>		
+    <div>
+<div>

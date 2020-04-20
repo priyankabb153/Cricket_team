@@ -1,0 +1,33 @@
+<div class="panel panel-default" ng-init="showPlayer()">
+	<div class="panel-heading">
+	  <p class="panel-title"><span style="color:#5bc0de;" 
+class="glyphicon glyphicon-edit"> </span> Edit Player</p>
+	</div>
+	<div class="panel-body">
+		<form ng-submit="updatePlayer()">
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" class="form-control" id="name" ng-model="players.name" value="players.name">
+    </div>
+    <div class="form-group">
+      <label for="joiningdate">Joining Date:</label>
+      <input type="date" class="form-control" id="joiningdate" ng-model="players.joiningdate" value="players.joiningdate">
+    </div>
+    <div class="form-group">
+      <label for="birthdate">Birth Date:</label>
+      <input type="date" class="form-control" id="birthdate" ng-model="players.birthdate" value="players.birthdate">
+    </div>
+    <div class="form-group">
+      <label for="contact">Contact No. :</label>
+      <input type="text" class="form-control" id="contact" ng-model="players.contact" value="players.contact">
+      <div class="form-group">
+      <label for="type">Type :</label>
+      <input type="text" class="form-control" id="type" ng-model="players.type" value="players.type">
+      <div class="form-group">
+
+    </div>
+    <button type="submit" style="color:#5bc0de;" class="btn btn-default">Update</button>
+    <a href="#/players" class="btn btn-default"> Cancel</a>
+</form>		
+    <div>
+<div>
